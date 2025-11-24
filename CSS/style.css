@@ -76,32 +76,7 @@
     overflow-x: auto;
     padding-top: 20px;
     }
-    /* .card {
-}
 
-.card {
-    min-width: 200px;
-    height: 200px;
-    background: var(--card);
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--soft);
-    cursor: pointer;
-    transition: .3s;
-    } */
-    /* .card:hover {
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    } */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-}
-
-/*//*/
 
     body {
         background: #111;
