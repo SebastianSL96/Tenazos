@@ -59,6 +59,3 @@ document.getElementById("btn-cart").addEventListener("click", () => {
 document.getElementById("close-sidebar").addEventListener("click", () => {
     document.getElementById("sidebar").classList.remove("open");
 });
-
-
-

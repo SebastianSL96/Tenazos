@@ -6,16 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Science+Gothic&display=swap" rel="stylesheet">
     <title>Tienda</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/style.css" />
-
 </head>
 
 <body>
@@ -81,7 +75,6 @@
 
             </div>
         </div>
-
     </nav>
     <section>
         <div class="recuadro">
@@ -214,13 +207,118 @@
         <div id="cart-items"></div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-        </script>
-    <script src="/JS/script.js"></script>
+    <div id="comentarios">
+        <div id="puntuacion">
+            <div id="estrellas">⭐⭐⭐⭐</div>
+            <h2>4.5</h2>
+            <h4>Puntaje Alto</h4>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-titulo">
+                            <img src="/IMG/persona.png" alt="logopersona">
+                            <h5 class="card-title">Pedro Lopéz</h5>
+                        </div>
+                        <div id="estrellas">⭐⭐⭐⭐</div>
+                        <p class="card-text">Comprar en Tenazos fue muy fácil. La página carga rápido, encontré mi talla
+                            sin complicaciones y el proceso de pago es súper claro.
+                            <br>Gran Página de zapatillas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-titulo">
+                            <img src="/IMG/persona.png" alt="logopersona">
+                            <h5 class="card-title">Jimena Rodriguez</h5>
+                        </div>
+                        <div id="estrellas">⭐⭐⭐⭐⭐</div>
+                        <p class="card-text">Volvería si lugar a duda elegir esta página para comprar mis zapatillas.
+                            <br> Super recomendada!!!.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-titulo">
+                            <img src="/IMG/persona.png" alt="logopersona">
+                            <h5 class="card-title">Cristian Camilo</h5>
+                        </div>
+                        <div id="estrellas">⭐⭐⭐⭐</div>
+                        <p class="card-text">Hice una caminata larga con estos tenis y la comodidad es impresionante. La
+                            suela amortigua muy bien y el material respira bastante. Única recomendación: pedir media
+                            talla más si tienes el pie ancho</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <a href="https://wa.me/573001234567" aria-label="WhatsApp" class="whatsapp-btn">
+        <i class="bi bi-whatsapp"></i>
+    </a>
 
+    <footer>
+        <div class="container">
+            <nav class="footer-nav">
+                <h3 class="separado">Tenazos</h3>
+                <img src="/IMG/logoRB.png" alt="">
+                <p></p>
+            </nav>
+            <nav class="footer-nav">
+                <h3>Corporativo</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <hr />
+            <nav class="footer-nav">
+                <h3>Categorias</h3>
+                <ul>
+                    <li><a href="">Hombre</a></li>
+                    <li><a href="">Mujer</a></li>
+                    <li><a href="">Niños</a></li>
+                </ul>
+            </nav>
+            <hr />
+            <nav class="footer-nav">
+                <h3>Destacados</h3>
+                <ul>
+                    <li><a href="">Skechers </a></li>
+                    <li><a href="">Adidas</a></li>
+                    <li><a href="">Puma</a></li>
+                    <li><a href="">Bubllegummers</a></li>
+                </ul>
+            </nav>
+            <hr />
+            <nav class="footer-nav">
+                <h3>Servicio al Cliente</h3>
+                <ul>
+                    <li><a href="#comentarios">Comentarios </a></li>
+                    <li><a href="">Garantías</a></li>
+                    <li><a href="">Hablemos por WhatsApp</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-social">
+            <p>Todos los derechos reservados | © 2025 | Tenazos</p>
+            <div class="icons">
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+                <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="/Tenazos/JS/script.js"></script>
 </body>
-
 
 </html>
