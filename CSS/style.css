@@ -395,3 +395,22 @@ p {
     font-size: 20px;
     color: #333;
 }
+
+
+#carouselmarcas .carousel-inner {
+  height: 250px; 
+}
+
+#carouselmarcas .carousel-item img {
+  height: 100%;
+  object-fit: cover; 
+  object-position: center; 
+}
+
+#carouselmarcas {
+  background: whitesmoke;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+}
+
+
