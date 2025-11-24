@@ -14,7 +14,7 @@ function ActualizarCarrito() {
     let totalProductos = 0;
     cart.forEach(item => totalProductos += item.quantity)
     document.getElementById("cart-count").textContent = totalProductos;
-    document.getElementById("cart-items-cout").textContent = totalProductos;
+    document.getElementById("cart-items-count").textContent = totalProductos;
 }
 ActualizarCarrito();
 
