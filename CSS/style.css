@@ -180,4 +180,9 @@
         flex-direction: column;
         justify-content: center;
     }
+
+    .form-control::placeholder {
+    color: gainsboro; 
+    opacity: 1;     
+    }
     
