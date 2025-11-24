@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tenazos</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
@@ -13,6 +13,95 @@
 </head>
 
 <body>
+    <header class="nav">
+        <div class="logo">F</div>
+        <nav class="menu">
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+        </nav>
+
+        <button id="btn-cart" class="cart-btn">🛒 <span id="cart-count">0</span></button>
+    </header>
+
+    <section class="products">
+        <div class="product-card">
+            <img src="#.png" class="product-img">
+            <h3 class="product-title">Puma X-Ray</h3>
+            <p class="product-price">$255</p>
+            <!-- utilizamos data-* pra guardar la informacion del elemento y poder agregarla al carrito -->
+            <button class="add-cart-btn" data-id="1" data-name="Puma X-Ray" data-price="255" data-img="#.png">Agregar al
+                carrito</button>
+        </div>
+
+        <div class="product-card">
+            <img src="#.png" class="product-img">
+            <h3 class="product-title">Nike Air Racer</h3>
+            <p class="product-price">$320</p>
+            <button class="add-cart-btn" data-id="2" data-name="Nike Air Racer" data-price="320"
+                data-img="#.png">Agregar al carrito</button>
+        </div>
+    </section>
+
+    <!-- Sidebar del carrito -->
+    <div id="sidebar" class="sidebar">
+        <button id="close-sidebar" class="close-btn">✖</button>
+        <h2>Carrito</h2>
+        <div id="cart-items"></div>
+    </div>
+
+    <div id="comentarios">
+        <div id="puntuacion">
+            <div id="estrellas">⭐⭐⭐⭐</div>
+            <h2>4.5</h2>
+            <h4>Puntaje Alto</h4>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-titulo">
+                            <img src="/IMG/persona.png" alt="logopersona">
+                            <h5 class="card-title">Pedro Lopéz</h5>
+                        </div>
+                        <div id="estrellas">⭐⭐⭐⭐</div>
+                        <p class="card-text">Comprar en Tenazos fue muy fácil. La página carga rápido, encontré mi talla
+                            sin complicaciones y el proceso de pago es súper claro.
+                            <br>Gran Página de zapatillas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-titulo">
+                            <img src="/IMG/persona.png" alt="logopersona">
+                            <h5 class="card-title">Jimena Rodriguez</h5>
+                        </div>
+                        <div id="estrellas">⭐⭐⭐⭐⭐</div>
+                        <p class="card-text">Volvería si lugar a duda elegir esta página para comprar mis zapatillas.
+                            <br> Super recomendada!!!.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-titulo">
+                            <img src="/IMG/persona.png" alt="logopersona">
+                            <h5 class="card-title">Cristian Camilo</h5>
+                        </div>
+                        <div id="estrellas">⭐⭐⭐⭐</div>
+                        <p class="card-text">Hice una caminata larga con estos tenis y la comodidad es impresionante. La
+                            suela amortigua muy bien y el material respira bastante. Única recomendación: pedir media
+                            talla más si tienes el pie ancho</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="container">
@@ -67,6 +156,7 @@
             </div>
         </div>
     </footer>
+    <script src="/Tenazos/JS/script.js"></script>
 </body>
 
 </html>
