@@ -75,13 +75,13 @@
     gap: 20px;
     overflow-x: auto;
     padding-top: 20px;
-
 }
 
-
-
 body {
-    background: #111;
+    background-image: url("/IMG/image1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
     color: #fff;
     margin: 0;
     font-family: Arial;
@@ -188,22 +188,6 @@ body {
     opacity: 1;
 }
 
-
-body {
-    background: #111;
-    color: #fff;
-    margin: 0;
-    font-family: Arial;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    background: #222;
-    align-items: center;
-}
-
 .cart-btn {
     background: #fff;
     padding: 8px 15px;
@@ -272,28 +256,6 @@ body {
     float: right;
     cursor: pointer;
 }
-
-.cart-item {
-    display: flex;
-    gap: 10px;
-    background: #2a2a2a;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.cart-item img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-}
-
-.cart-item-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 
 #comentarios {
     background: rgba(172, 170, 170, 0.7);
@@ -411,13 +373,6 @@ footer a:hover {
     footer a:hover {
         padding-left: 0;
     }
-}
-
-body {
-    background-image: url("/IMG/image1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 /* Recuadro encima del fondo */
