@@ -1,0 +1,58 @@
+body {
+  background-image: url("/IMG/image1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Recuadro encima del fondo */
+.recuadro {
+  width: 1050px;
+  height: 850px;
+  margin: 80px auto;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+}
+
+
+/* Imagen del zapato girando */
+#zapato {
+  width: 200px;
+  height: 350px;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  animation: giro 10s linear infinite;
+  transform-style: preserve-3d;
+}
+
+/* Animación 360° */
+@keyframes giro {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+
+.recuadro2 {
+    width: 200px;
+  height: 350px;
+  position: absolute;
+  top: 20%;
+  left: 20px;
+}
+
+.recuadro3 {
+    width: 200px;
+  height: 350px;
+  position: absolute;
+  top: 750px;
+  left: 830px;
+}
