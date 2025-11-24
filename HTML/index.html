@@ -1,65 +1,298 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic&display=swap" rel="stylesheet">
     <title>Tienda</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
 
-<header class="nav">
-    <div class="logo">F</div>
-    <nav class="menu">
-        <a href="#">Men</a>
-        <a href="#">Women</a>
-        <a href="#">Kids</a>
+    <!--NAVBAR-->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-brand" href="index.html"><img src="/IMG/logoRB.png"
+                    alt="Logo de la Tienda" width="80" height="80" class="d-inline-block align-top">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-expanded="false" aria-label="Tooggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Catalogo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#section-productos">Deportivos</a></li>
+                            <li><a class="dropdown-item" href="#section-productos">Casuales</a></li>
+                            <li><a class="dropdown-item" href="#section-productos">Hiking</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#section-productos">Marcas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comentarios">Comentarios</a>
+                    </li>
+                </ul>
+
+
+                <div class="w-100 d-flex justify-content-center">
+                    <form class="d-flex" style="max-width: 400px; width: 100%;" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Nike air force one"
+                            aria-label="Buscar">
+                        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                    </form>
+                </div>
+
+
+                <!-- ICONO DE CARRITO -->
+                <button id="btn-cart" class="btn btn-outline-primary position-relative">
+                    <i class="bi bi-cart"></i>
+                    <span id="cart-count"
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"></span>
+                </button>
+            </div>
+        </div>
     </nav>
+    <section id="inicio">
+        <div class="recuadro">
+            <img id="zapato" src="/IMG/zapato 3d.jpg" alt="zapato">
+            <div class="recuadro2">
+                <h1>Bear X-Ray</h1>
+                <h2>comodidad y duracion</h2>
+            </div>
+            <section>
+                <div class="recuadro3">
+                    <h1>lo mejor en calidad</h1>
+                    <button id="miBoton" class="add-cart-btn" data-id="101" data-name="Bear X-Ray" data-price="79.99"
+                        data-img="zapato.png">COMPRAR</button>
+                    <p id="mensaje"></p>
+                </div>
+        </div>
+    </section>
+    </section>
+    <section class="products" id="section-productos">
+        <div class="product-card">
+            <img src="#.png" class="product-img">
+            <h3 class="product-title">Puma X-Ray</h3>
+            <p class="product-price">$255</p>
+            <!-- utilizamos data-* pra guardar la informacion del elemento y poder agregarla al carrito -->
+            <button class="add-cart-btn" data-id="1" data-name="Puma X-Ray" data-price="255" data-img="#.png">Agregar al
+                carrito</button>
+        </div>
 
-    <button id="btn-cart" class="cart-btn">🛒 <span id="cart-count">0</span></button>
-</header>
+        <div class="product-card">
+            <img src="#.png" class="product-img">
+            <h3 class="product-title">Nike Air Racer</h3>
+            <p class="product-price">$320</p>
+            <button class="add-cart-btn" data-id="2" data-name="Nike Air Racer" data-price="320"
+                data-img="#.png">Agregar al carrito</button>
+        </div>
+    </section>
 
-<section class="products">
-    <div class="product-card">
-        <img src="#.png" class="product-img">
-        <h3 class="product-title">Puma X-Ray</h3>
-        <p class="product-price">$255</p>
-        <!-- utilizamos data-* pra guardar la informacion del elemento y poder agregarla al carrito -->
-        <button class="add-cart-btn" data-id="1" data-name="Puma X-Ray" data-price="255" data-img="#.png">Agregar al carrito</button>
+    <!--CARRUSEL MARCAS -->
+    <div id="carouselmarcas" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/IMG/AdidasRB.png" class="d-block w-100" alt="Adidas">
+            </div>
+            <div class="carousel-item">
+                <img src="/IMG/asicsRB.png" class="d-block w-100" alt="asics">
+            </div>
+            <div class="carousel-item">
+                <img src="/IMG/NikeRB.png" class="d-block w-100" alt="nike">
+            </div>
+             <div class="carousel-item">
+                <img src="/IMG/pumaRB.png" class="d-block w-100" alt="puma">
+            </div>
+            <div class="carousel-item">
+                <img src="/IMG/JordanRB.png" class="d-block w-100" alt="jordan">
+            </div>
+            <div class="carousel-item">
+                <img src="/IMG/Hoka.png" class="d-block w-100" alt="hoka">
+            </div>
+            <div class="carousel-item">
+                <img src="/IMG/Reebok.png" class="d-block w-100" alt="Reebok">
+            </div>
+            <div class="carousel-item">
+                <img src="/IMG/Under ArmourRB.png" class="d-block w-100" alt="UnderArmour">
+            </div>
+            
+        </div>
     </div>
 
-    <div class="product-card">
-        <img src="#.png" class="product-img">
-        <h3 class="product-title">Nike Air Racer</h3>
-        <p class="product-price">$320</p>
-        <button class="add-cart-btn" data-id="2" data-name="Nike Air Racer" data-price="320" data-img="#.png">Agregar al carrito</button>
-    </div>
-</section>
 
-<!-- Sidebar del carrito -->
-<div id="sidebar" class="sidebar card bg-dark text-light vh-100 overflow-y-hidden">
-    <div class="card-header d-flex gap-3 justify-content-between"> 
-        <h3>Carrito</h3>
+
+    <!-- Sidebar del carrito -->
+    <div id="sidebar" class="sidebar">
         <button id="close-sidebar" class="close-btn">✖</button>
-    </div>
-    <div class="card-body overflow-y-scroll">
+        <h2>Carrito</h2>
         <div id="cart-items"></div>
     </div>
-    <div class="card-footer d-flex flex-column gap-3">
-        <h4 class="d-flex justify-content-between">
-            <div class="">Total Items: </div>
-            <div class="" id="cart-items-cout">0</div>
-        </h4>
-        <h4 class="d-flex justify-content-between align-items-center">
-            <div class="">Total:  </div>
-            <div class="">$ <span id="cart-total-check"></span></div>
-            <button class="btn btn-light btn-lg">Comprar</button>
-        </h4>
-    </div>
-</div>
 
-<script src="../JS/script.js"></script>
+    <script src="/JS/script.js"></script>
+
+    <!-- Sidebar del carrito -->
+    <div id="sidebar" class="sidebar card bg-dark text-light vh-100 overflow-y-hidden">
+        <div class="card-header d-flex gap-3 justify-content-between">
+            <h3>Carrito</h3>
+            <button id="close-sidebar" class="close-btn">✖</button>
+        </div>
+        <div class="card-body overflow-y-scroll">
+            <div id="cart-items"></div>
+        </div>
+        <div class="card-footer d-flex flex-column gap-3">
+            <h4 class="d-flex justify-content-between">
+                <div class="">Total Items: </div>
+                <div class="">4</div>
+            </h4>
+            <h4 class="d-flex justify-content-between">
+                <div class="">Total: </div>
+                <div class="">$ 150.000</div>
+                <button class="btn btn-primary">comprar</button>
+            </h4>
+        </div>
+    </div>
+
+    <!-- Sidebar del carrito -->
+    <div id="sidebar" class="sidebar">
+        <button id="close-sidebar" class="close-btn">✖</button>
+        <h2>Carrito</h2>
+        <div id="cart-items"></div>
+    </div>
+
+    <div id="comentarios">
+        <div id="puntuacion">
+            <div id="estrellas">⭐⭐⭐⭐</div>
+            <h2>4.5</h2>
+            <h4>Puntaje Alto</h4>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-titulo">
+                            <img src="/IMG/persona.png" alt="logopersona">
+                            <h5 class="card-title">Pedro Lopéz</h5>
+                        </div>
+                        <div id="estrellas">⭐⭐⭐⭐</div>
+                        <p class="card-text">Comprar en Tenazos fue muy fácil. La página carga rápido, encontré mi talla
+                            sin complicaciones y el proceso de pago es súper claro.
+                            <br>Gran Página de zapatillas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-titulo">
+                            <img src="/IMG/persona.png" alt="logopersona">
+                            <h5 class="card-title">Jimena Rodriguez</h5>
+                        </div>
+                        <div id="estrellas">⭐⭐⭐⭐⭐</div>
+                        <p class="card-text">Volvería si lugar a duda elegir esta página para comprar mis zapatillas.
+                            <br> Super recomendada!!!.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-titulo">
+                            <img src="/IMG/persona.png" alt="logopersona">
+                            <h5 class="card-title">Cristian Camilo</h5>
+                        </div>
+                        <div id="estrellas">⭐⭐⭐⭐</div>
+                        <p class="card-text">Hice una caminata larga con estos tenis y la comodidad es impresionante. La
+                            suela amortigua muy bien y el material respira bastante. Única recomendación: pedir media
+                            talla más si tienes el pie ancho</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/573001234567" aria-label="WhatsApp" class="whatsapp-btn">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <footer>
+        <div class="container">
+            <nav class="footer-nav">
+                <h3 class="separado">Tenazos</h3>
+                <img src="/IMG/logoRB.png" alt="">
+                <p></p>
+            </nav>
+            <nav class="footer-nav">
+                <h3>Corporativo</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <hr />
+            <nav class="footer-nav">
+                <h3>Categorias</h3>
+                <ul>
+                    <li><a href="">Hombre</a></li>
+                    <li><a href="">Mujer</a></li>
+                    <li><a href="">Niños</a></li>
+                </ul>
+            </nav>
+            <hr />
+            <nav class="footer-nav">
+                <h3>Destacados</h3>
+                <ul>
+                    <li><a href="">Skechers </a></li>
+                    <li><a href="">Adidas</a></li>
+                    <li><a href="">Puma</a></li>
+                    <li><a href="">Bubllegummers</a></li>
+                </ul>
+            </nav>
+            <hr />
+            <nav class="footer-nav">
+                <h3>Servicio al Cliente</h3>
+                <ul>
+                    <li><a href="#comentarios">Comentarios </a></li>
+                    <li><a href="">Garantías</a></li>
+                    <li><a href="">Hablemos por WhatsApp</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-social">
+            <p>Todos los derechos reservados | © 2025 | Tenazos</p>
+            <div class="icons">
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+                <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="/Tenazos/JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
