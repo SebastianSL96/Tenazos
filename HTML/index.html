@@ -6,6 +6,7 @@
     <title>Tienda</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
 
@@ -49,11 +50,11 @@
     <div class="card-footer d-flex flex-column gap-3">
         <h4 class="d-flex justify-content-between">
             <div class="">Total Items: </div>
-            <div class="">4</div>
+            <div class="" id="cart-items-cout">0</div>
         </h4>
-        <h4 class="d-flex justify-content-between">
+        <h4 class="d-flex justify-content-between align-items-center">
             <div class="">Total:  </div>
-            <div class="">$ 150.000</div>
+            <div class="">$ <span id="cart-total-check"></span></div>
             <button class="btn btn-primary">comprar</button>
         </h4>
     </div>
