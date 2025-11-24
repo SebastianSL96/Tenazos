@@ -80,114 +80,114 @@
 
 
 
-    body {
-        background: #111;
-        color: #fff;
-        margin: 0;
-        font-family: Arial;
-    }
-    
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        padding: 15px;
-        background: #222;
-        align-items: center;
-    }
-    
-    .cart-btn {
-        background: #fff;
-        padding: 8px 15px;
-        border-radius: 8px;
-        cursor: pointer;
-        border: none;
-        font-size: 18px;
-    }
-    
-    .products {
-        display: flex;
-        gap: 20px;
-        padding: 20px;
-    }
-    
-    .product-card {
-        background: #1c1c1c;
-        padding: 15px;
-        border-radius: 15px;
-        width: 230px;
-        text-align: center;
-        transition: transform 0.2s ease;
-    }
-    
-    .product-card:hover {
-        transform: scale(1.05);
-    }
-    
-    .product-img {
-        width: 100%;
-        object-fit: contain;
-        height: 180px;
-    }
-    
-    .add-cart-btn {
-        background: #00a2ff;
-        padding: 8px 12px;
-        border-radius: 8px;
-        border: none;
-        cursor: pointer;
-        color: white;
-    }
-    
-    /* SIDEBAR */
-    .sidebar {
-        position: fixed;
-        right: -350px;
-        top: 0;
-        width: 350px;
-        height: 100%;
-        transition: 0.3s;
-        overflow-y: auto;
-    }
-    
-    .sidebar.open {
-        right: 0;
-    }
-    
-    .close-btn {
-        background: transparent;
-        color: white;
-        border: none;
-        font-size: 24px;
-        float: right;
-        cursor: pointer;
-    }
-    
-    .cart-item {
-        display: flex;
-        gap: 10px;
-        background: #2a2a2a;
-        padding: 10px;
-        border-radius: 8px;
-        margin-bottom: 10px;
-    }
-    
-    .cart-item img {
-        width: 60px;
-        height: 60px;
-        object-fit: contain;
-    }
-    
-    .cart-item-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+body {
+    background: #111;
+    color: #fff;
+    margin: 0;
+    font-family: Arial;
+}
 
-    .form-control::placeholder {
-    color: gainsboro; 
-    opacity: 1;     
-    }
-    
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #222;
+    align-items: center;
+}
+
+.cart-btn {
+    background: #fff;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background: #1c1c1c;
+    padding: 15px;
+    border-radius: 15px;
+    width: 230px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-img {
+    width: 100%;
+    object-fit: contain;
+    height: 180px;
+}
+
+.add-cart-btn {
+    background: #00a2ff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    right: -350px;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    transition: 0.3s;
+    overflow-y: auto;
+}
+
+.sidebar.open {
+    right: 0;
+}
+
+.close-btn {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 24px;
+    float: right;
+    cursor: pointer;
+}
+
+.cart-item {
+    display: flex;
+    gap: 10px;
+    background: #2a2a2a;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.cart-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-control::placeholder {
+    color: gainsboro;
+    opacity: 1;
+}
+
 
 body {
     background: #111;
@@ -296,27 +296,41 @@ body {
 
 
 #comentarios {
-    background: #929191bb;
+    background: rgba(172, 170, 170, 0.7);
+    ;
     padding: 40px 20px;
     font-family: "Montserrat", sans-serif;
     color: #222;
 }
 
-#puntuacion{
+#puntuacion {
     display: flex;
     align-items: center;
     gap: 30px;
     justify-content: center;
     margin-bottom: 15px;
 }
-.card-titulo{
+
+.card-titulo {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-.card-body img{
+
+.card-body img {
     width: 50px;
     height: 50px;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 footer {
@@ -344,7 +358,7 @@ footer .container {
     letter-spacing: 1px;
 }
 
-.footer-nav img{
+.footer-nav img {
     width: 150px;
     height: 150px;
 }
@@ -408,8 +422,8 @@ body {
 
 /* Recuadro encima del fondo */
 .recuadro {
-    width: 1080px;
-    height: 680px;
+    width: 1000px;
+    height: 500px;
     margin: 20px auto;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
@@ -421,11 +435,11 @@ body {
 
 /* Imagen del zapato girando */
 #zapato {
-    width: 280px;
+    width: 350px;
     height: 350px;
     position: absolute;
-    top: 30%;
-    left: 40%;
+    top: 15%;
+    left: 30%;
     transform: translate(-50%, -50%);
     animation: giro 10s linear infinite;
     transform-style: preserve-3d;
@@ -450,34 +464,37 @@ body {
     top: 8%;
     left: 20px;
     color: #0c0c0c;
-      font-family: 'Science Gothic', sans-serif; /* Usa Science Gothic y fallback */
+    font-family: 'Science Gothic', sans-serif;
+    /* Usa Science Gothic y fallback */
     font-size: 18px;
-    padding: 20px;   
+    padding: 20px;
 }
 
 .recuadro3 {
     width: 200px;
     height: 35px;
     position: absolute;
-    top: 400px;
-    left: 800px;
+    top: 200px;
+    left: 750px;
     color: #111;
-  font-family: 'Science Gothic', sans-serif; /* Usa Science Gothic y fallback */
+    font-family: 'Science Gothic', sans-serif;
+    /* Usa Science Gothic y fallback */
     font-size: 18px;
-    padding: 20px;            
+    padding: 20px;
 }
 
 
-  @font-face {
+@font-face {
     font-family: 'Science Gothic';
     src: url('fonts/ScienceGothic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
 
 button {
-    background-color: #4CAF50; /* verde */
+    background-color: #4CAF50;
+    /* verde */
     color: white;
     padding: 15px 30px;
     font-size: 18px;
@@ -501,4 +518,3 @@ p {
     font-size: 20px;
     color: #333;
 }
-
