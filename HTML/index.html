@@ -1,14 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/CSS/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TENAZOS
-    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda</title>
+    <link rel="stylesheet" href="/Tenazos/CSS/style.css" />
 </head>
 <body>
-    <body>
+
+<header class="nav">
+    <div class="logo">F</div>
+    <nav class="menu">
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+    </nav>
+
+    <button id="btn-cart" class="cart-btn">🛒 <span id="cart-count">0</span></button>
+</header>
+
+<section class="products">
+    <div class="product-card">
+        <img src="#.png" class="product-img">
+        <h3 class="product-title">Puma X-Ray</h3>
+        <p class="product-price">$255</p>
+        <!-- utilizamos data-* pra guardar la informacion del elemento y poder agregarla al carrito -->
+        <button class="add-cart-btn" data-id="1" data-name="Puma X-Ray" data-price="255" data-img="#.png">Agregar al carrito</button>
+    </div>
+
+    <div class="product-card">
+        <img src="#.png" class="product-img">
+        <h3 class="product-title">Nike Air Racer</h3>
+        <p class="product-price">$320</p>
+        <button class="add-cart-btn" data-id="2" data-name="Nike Air Racer" data-price="320" data-img="#.png">Agregar al carrito</button>
+    </div>
+</section>
+
+<!-- Sidebar del carrito -->
+<div id="sidebar" class="sidebar">
+    <button id="close-sidebar" class="close-btn">✖</button>
+    <h2>Carrito</h2>
+    <div id="cart-items"></div>
+</div>
+
+<script src="/Tenazos/JS/script.js"></script>
+</body>
+</html>
+
+
   <div class="recuadro">
     <img id="zapato" src="/IMG/zapato 3d.jpg" alt="zapato">
     <div class="recuadro2">
