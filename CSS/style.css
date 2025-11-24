@@ -57,6 +57,10 @@
     overflow-x: auto;
     padding-top: 20px;
     }
+    .bi-trash3:hover {
+        color: red;
+        cursor: pointer;
+    }
     /* .card {
     min-width: 200px;
     height: 200px;

@@ -89,7 +89,7 @@ function MostrarCarrito() {
                 <div class="card-body p-2">
                     <div class="d-flex align-items-center">
                     <div class="me-3">
-                        <i class="bi bi-trash3 text-center" onClick="modificarCantidad(${item.id}, 'eliminar')" ></i>
+                        <i class="bi bi-trash3 text-center d-flex mb-2" onClick="modificarCantidad(${item.id}, 'eliminar')" ></i>
                         <div class="border border-white rounded-4" style="width: 60px; height: 60px;">
                             <img src="${item.img}">
                         </div>
