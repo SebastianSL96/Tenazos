@@ -87,13 +87,7 @@ body {
     font-family: Arial;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    background: #222;
-    align-items: center;
-}
+
 
 .cart-btn {
     background: #fff;
