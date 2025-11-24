@@ -75,6 +75,8 @@
     gap: 20px;
     overflow-x: auto;
     padding-top: 20px;
+    }
+    /* .card {
 }
 
 .card {
@@ -88,15 +90,127 @@
     color: var(--soft);
     cursor: pointer;
     transition: .3s;
+    } */
+    /* .card:hover {
 }
 
 .card:hover {
     transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    } */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 /*//*/
 
+    body {
+        background: #111;
+        color: #fff;
+        margin: 0;
+        font-family: Arial;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        background: #222;
+        align-items: center;
+    }
+    
+    .cart-btn {
+        background: #fff;
+        padding: 8px 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        border: none;
+        font-size: 18px;
+    }
+    
+    .products {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .product-card {
+        background: #1c1c1c;
+        padding: 15px;
+        border-radius: 15px;
+        width: 230px;
+        text-align: center;
+        transition: transform 0.2s ease;
+    }
+    
+    .product-card:hover {
+        transform: scale(1.05);
+    }
+    
+    .product-img {
+        width: 100%;
+        object-fit: contain;
+        height: 180px;
+    }
+    
+    .add-cart-btn {
+        background: #00a2ff;
+        padding: 8px 12px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        color: white;
+    }
+    
+    /* SIDEBAR */
+    .sidebar {
+        position: fixed;
+        right: -350px;
+        top: 0;
+        width: 350px;
+        height: 100%;
+        transition: 0.3s;
+        overflow-y: auto;
+    }
+    
+    .sidebar.open {
+        right: 0;
+    }
+    
+    .close-btn {
+        background: transparent;
+        color: white;
+        border: none;
+        font-size: 24px;
+        float: right;
+        cursor: pointer;
+    }
+    
+    .cart-item {
+        display: flex;
+        gap: 10px;
+        background: #2a2a2a;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .cart-item img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+    }
+    
+    .cart-item-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form-control::placeholder {
+    color: gainsboro; 
+    opacity: 1;     
+    }
+    
 body {
     background: #111;
     color: #fff;
