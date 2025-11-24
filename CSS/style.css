@@ -57,7 +57,7 @@
     overflow-x: auto;
     padding-top: 20px;
     }
-    .card {
+    /* .card {
     min-width: 200px;
     height: 200px;
     background: var(--card);
@@ -68,11 +68,11 @@
     color: var(--soft);
     cursor: pointer;
     transition: .3s;
-    }
-    .card:hover {
+    } */
+    /* .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    }
+    } */
 
     /*//*/
 
@@ -141,8 +141,6 @@
         top: 0;
         width: 350px;
         height: 100%;
-        background: #1e1e1e;
-        padding: 20px;
         transition: 0.3s;
         overflow-y: auto;
     }

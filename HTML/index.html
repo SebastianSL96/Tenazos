@@ -38,12 +38,27 @@
 </section>
 
 <!-- Sidebar del carrito -->
-<div id="sidebar" class="sidebar">
-    <button id="close-sidebar" class="close-btn">✖</button>
-    <h2>Carrito</h2>
-    <div id="cart-items"></div>
+<div id="sidebar" class="sidebar card bg-dark text-light vh-100 overflow-y-hidden">
+    <div class="card-header d-flex gap-3 justify-content-between"> 
+        <h3>Carrito</h3>
+        <button id="close-sidebar" class="close-btn">✖</button>
+    </div>
+    <div class="card-body overflow-y-scroll">
+        <div id="cart-items"></div>
+    </div>
+    <div class="card-footer d-flex flex-column gap-3">
+        <h4 class="d-flex justify-content-between">
+            <div class="">Total Items: </div>
+            <div class="">4</div>
+        </h4>
+        <h4 class="d-flex justify-content-between">
+            <div class="">Total:  </div>
+            <div class="">$ 150.000</div>
+            <button class="btn btn-primary">comprar</button>
+        </h4>
+    </div>
 </div>
 
-<script src="/Tenazos/JS/script.js"></script>
+<script src="../JS/script.js"></script>
 </body>
 </html>
