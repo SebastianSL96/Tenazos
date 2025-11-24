@@ -88,26 +88,7 @@
                 </div>
         </div>
     </section>
-    </section>
-    <section class="products" id="section-productos">
-        <div class="product-card">
-            <img src="#.png" class="product-img">
-            <h3 class="product-title">Puma X-Ray</h3>
-            <p class="product-price">$255</p>
-            <!-- utilizamos data-* pra guardar la informacion del elemento y poder agregarla al carrito -->
-            <button class="add-cart-btn" data-id="1" data-name="Puma X-Ray" data-price="255" data-img="#.png">Agregar al
-                carrito</button>
-        </div>
-
-        <div class="product-card">
-            <img src="#.png" class="product-img">
-            <h3 class="product-title">Nike Air Racer</h3>
-            <p class="product-price">$320</p>
-            <button class="add-cart-btn" data-id="2" data-name="Nike Air Racer" data-price="320"
-                data-img="#.png">Agregar al carrito</button>
-        </div>
-    </section>
-
+    
     <!--CARRUSEL MARCAS -->
     <div id="carouselmarcas" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -133,22 +114,37 @@
                 <img src="/IMG/Reebok.png" class="d-block w-100" alt="Reebok">
             </div>
             <div class="carousel-item">
-                <img src="/IMG/Under ArmourRB.png" class="d-block w-100" alt="UnderArmour">
+                <img src="/IMG/UnderArmourRB.png" class="d-block w-100" alt="UnderArmour">
             </div>
             
         </div>
     </div>
+    <section class="products" id="section-productos">
+        <div class="product-card">
+            <img src="#.png" class="product-img">
+            <h3 class="product-title">Puma X-Ray</h3>
+            <p class="product-price">$255</p>
+            <!-- utilizamos data-* pra guardar la informacion del elemento y poder agregarla al carrito -->
+            <button class="add-cart-btn" data-id="1" data-name="Puma X-Ray" data-price="255" data-img="#.png">Agregar al
+                carrito</button>
+        </div>
 
+        <div class="product-card">
+            <img src="#.png" class="product-img">
+            <h3 class="product-title">Nike Air Racer</h3>
+            <p class="product-price">$320</p>
+            <button class="add-cart-btn" data-id="2" data-name="Nike Air Racer" data-price="320"
+                data-img="#.png">Agregar al carrito</button>
+        </div>
+    </section>
 
-
+    
     <!-- Sidebar del carrito -->
     <div id="sidebar" class="sidebar">
         <button id="close-sidebar" class="close-btn">✖</button>
         <h2>Carrito</h2>
         <div id="cart-items"></div>
     </div>
-
-    <script src="/JS/script.js"></script>
 
     <!-- Sidebar del carrito -->
     <div id="sidebar" class="sidebar card bg-dark text-light vh-100 overflow-y-hidden">
@@ -172,13 +168,7 @@
         </div>
     </div>
 
-    <!-- Sidebar del carrito -->
-    <div id="sidebar" class="sidebar">
-        <button id="close-sidebar" class="close-btn">✖</button>
-        <h2>Carrito</h2>
-        <div id="cart-items"></div>
-    </div>
-
+    
     <div id="comentarios">
         <div id="puntuacion">
             <div id="estrellas">⭐⭐⭐⭐</div>
@@ -290,7 +280,7 @@
             </div>
         </div>
     </footer>
-    <script src="/Tenazos/JS/script.js"></script>
+    <script src="/JS/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

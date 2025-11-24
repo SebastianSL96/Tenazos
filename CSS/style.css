@@ -475,9 +475,10 @@ p {
 }
 
 #carouselmarcas .carousel-item img {
-  height: 100%;
-  object-fit: cover; 
-  object-position: center; 
+   max-height: 180px;
+  width: auto;
+  margin: 0 auto;
+  object-fit: contain
 }
 
 #carouselmarcas {
