@@ -6,22 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Science+Gothic&display=swap" rel="stylesheet">
     <title>Tienda</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/style.css" />
-    
+    <link rel="stylesheet" href="../CSS/style.css" />   
 </head>
-
 <body>
-
     <!--NAVBAR-->
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand fw-bold text-brand" href="index.html"><img src="/IMG/logoRB.png"
@@ -105,44 +96,27 @@
   </section>
   <section class="products">
     <div class="product-card">
-        <img src="#.png" class="product-img">
+        <img src="/IMG/puma xray.webp" alt="zapatillas negras con colores primarios"  class="product-img">
         <h3 class="product-title">Puma X-Ray</h3>
         <p class="product-price">$255</p>
         <!-- utilizamos data-* pra guardar la informacion del elemento y poder agregarla al carrito -->
-        <button class="add-cart-btn" data-id="1" data-name="Puma X-Ray" data-price="255" data-img="#.png">Agregar al carrito</button>
+        <button class="add-cart-btn" data-id="1" data-name="Puma X-Ray" data-price="255" data-img="">Agregar al carrito</button>
     </div>
 
         <div class="product-card">
-            <img src="#.png" class="product-img">
+            <img src="/IMG/Nike Air Racer.webp" alt="zapatillas grices con blanco" class="product-img">
             <h3 class="product-title">Nike Air Racer</h3>
             <p class="product-price">$320</p>
             <button class="add-cart-btn" data-id="2" data-name="Nike Air Racer" data-price="320"
                 data-img="#.png">Agregar al carrito</button>
         </div>
     </section>
-
-    <!-- Sidebar del carrito -->
-    <div id="sidebar" class="sidebar">
-        <button id="close-sidebar" class="close-btn">✖</button>
-        <h2>Carrito</h2>
-        <div id="cart-items"></div>
-    </div>
-
-
-    <<<<<<< HEAD <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-        </script>
-        <script src="/JS/script.js"></script>
-
-
-
-        =======
         <!-- Sidebar del carrito -->
-        <div id="sidebar" class="sidebar card bg-dark text-light vh-100 overflow-y-hidden">
-            <div class="card-header d-flex gap-3 justify-content-between">
-                <h3>Carrito</h3>
-                <button id="close-sidebar" class="close-btn">✖</button>
-            </div>
+        <div id="sidebar" class="sidebar">
+  <button id="close-sidebar" class="close-btn">X</button>
+          <h2>Tu carrito</h2>
+           <div id="cart-items"></div>
+                  </div>
             <div class="card-body overflow-y-scroll">
                 <div id="cart-items"></div>
             </div>
@@ -158,9 +132,6 @@
                 </h4>
             </div>
         </div>
-
-        <script src="../JS/script.js"></script>
-        >>>>>>> 0ebafbeddf2ea5c6f0218f222902905fad017bb7
 <!-- Sidebar del carrito -->
 <div id="sidebar" class="sidebar">
     <button id="close-sidebar" class="close-btn">✖</button>
@@ -169,6 +140,9 @@
 </div>
 </body>
    <script src="/JS/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
