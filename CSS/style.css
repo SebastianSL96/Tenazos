@@ -213,9 +213,9 @@ body {
 
 /* Recuadro encima del fondo */
 .recuadro {
-    width: 1050px;
-    height: 850px;
-    margin: 80px auto;
+    width: 1080px;
+    height: 680px;
+    margin: 20px auto;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
     display: flex;
@@ -226,10 +226,10 @@ body {
 
 /* Imagen del zapato girando */
 #zapato {
-    width: 200px;
+    width: 280px;
     height: 350px;
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 40%;
     transform: translate(-50%, -50%);
     animation: giro 10s linear infinite;
@@ -249,19 +249,60 @@ body {
 
 
 .recuadro2 {
-    width: 200px;
+    width: 250px;
     height: 350px;
     position: absolute;
-    top: 20%;
+    top: 8%;
     left: 20px;
     color: #0c0c0c;
+      font-family: 'Science Gothic', sans-serif; /* Usa Science Gothic y fallback */
+    font-size: 18px;
+    padding: 20px;   
 }
 
 .recuadro3 {
     width: 200px;
-    height: 350px;
+    height: 35px;
     position: absolute;
-    top: 750px;
-    left: 830px;
+    top: 400px;
+    left: 800px;
     color: #111;
+  font-family: 'Science Gothic', sans-serif; /* Usa Science Gothic y fallback */
+    font-size: 18px;
+    padding: 20px;            
+}
+
+
+  @font-face {
+    font-family: 'Science Gothic';
+    src: url('fonts/ScienceGothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+button {
+    background-color: #4CAF50; /* verde */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
 }

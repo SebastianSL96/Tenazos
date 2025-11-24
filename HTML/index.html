@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic&display=swap" rel="stylesheet">
     <title>Tienda</title>
-    <link rel="stylesheet" href="/Tenazos/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
 </head>
 <body>
 
@@ -18,8 +19,28 @@
 
     <button id="btn-cart" class="cart-btn">🛒 <span id="cart-count">0</span></button>
 </header>
-
-<section class="products">
+<section>
+  <div class="recuadro">
+    <img id="zapato" src="/IMG/zapato 3d.jpg" alt="zapato">
+    <div class="recuadro2">
+        <h1>Bear X-Ray</h1>
+        <h2>comodidad y duracion</h2>
+    </div>
+    <section>
+    <div class="recuadro3">
+        <h1>lo mejor en calidad</h1>
+        <button  id="miBoton" 
+        class="add-cart-btn" 
+        data-id="101" 
+        data-name="Bear X-Ray" 
+        data-price="79.99" 
+        data-img="zapato.png">COMPRAR</button>
+        <p id="mensaje"></p>
+    </div>
+  </div>
+</section>
+  </section>
+  <section class="products">
     <div class="product-card">
         <img src="#.png" class="product-img">
         <h3 class="product-title">Puma X-Ray</h3>
@@ -42,23 +63,7 @@
     <h2>Carrito</h2>
     <div id="cart-items"></div>
 </div>
-
-<script src="/Tenazos/JS/script.js"></script>
 </body>
-</html>
-
-
-  <div class="recuadro">
-    <img id="zapato" src="/IMG/zapato 3d.jpg" alt="zapato">
-    <div class="recuadro2">
-        <p>lo mejor en calidad</p>
-    </div>
-    <div class="recuadro3">
-        <p>lo mejor en calidad</p>
-    </div>
-  </div>
-</body>
-
    <script src="/JS/script.js"></script>
 </body>
 </html>

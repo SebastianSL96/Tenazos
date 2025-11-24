@@ -60,12 +60,5 @@ document.getElementById("close-sidebar").addEventListener("click", () => {
     document.getElementById("sidebar").classList.remove("open");
 });
 
-const zapato = document.getElementById("zapato");
 
-zapato.addEventListener("click", () => {
-  if (zapato.style.animationPlayState === "paused") {
-    zapato.style.animationPlayState = "running";
-  } else {
-    zapato.style.animationPlayState = "paused";
-  }
-});
+
